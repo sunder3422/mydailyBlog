@@ -1,0 +1,36 @@
+body{
+  margin:0;
+}
+.nav{
+  padding:20px;
+  display: grid;
+  grid-template-columns: repeate(10,1fr);
+  background-color: grey;
+  color:white;
+}
+.pageHeading{
+  grid-column: 1/5;
+}
+.loc{
+  text-decoration:underline;
+}
+#home{
+  grid-column: 5/6
+}
+#about{
+  grid-column: 6/7;
+}
+#contact{
+  grid-column: 7/8;
+}
+
+/*------------footer----*/
+.footer{
+  background-color: skyblue;
+  font-style:italic;
+  font-weight: bolder;
+  text-align:center;
+  position:absolute;
+  width:100%;
+  bottom:0;
+}
