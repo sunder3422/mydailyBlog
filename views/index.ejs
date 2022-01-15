@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/index.css"/>
-  </head>
-  <body>
+
   <%- include('./partials/header.ejs') %>
+  <div class="topdata">
+    <h1>HOME</h1>
+    <p>HI this is my home page. Welcome to know me. hi my name is john rambo.
+      if you guys like my work please let me know and support me</p>
+  </div>
+  <div class="myblogs">
+    <div class="blogs">
+    <% for(var x=0;x<blogs.length;x++){
+       if(blogs[x].head!=""){ %>
+         <h1 class=""><%= blogs[x].head %></h1>
+          <p><%= blogs[x].body.substring(0,100)+"..." %><a href="/post/<%=blogs[x].head %>">Read More</a></span></p>
+    <% }} %>
 
-
-
-    <h1>this is page</h1>
-
-
+    </div>
+  </div>
+  <!-- <button onclick="mark()">click me</button> -->
   <%- include("./partials/footer.ejs") %>
-  </body>
-</html>

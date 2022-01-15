@@ -1,0 +1,16 @@
+
+    <%- include('./partials/header.ejs') %>
+     <div class="form">
+       <form class="addblog" action="/" method="post">
+         <div class="heading">
+           <input type="text" name="blogHeading" class="blogHeading" placeholder="Enter Header">
+         </div>
+         <div class="Data">
+           <textarea name="blogData" rows="8" cols="80" class="blogData" placeholder="Enter data"></textarea>
+         </div>
+         <div class="submitbutton">
+           <button type="submit" name="pagename">SUBMIT</button>
+         </div>
+       </form>
+     </div>;
+    <%- include("./partials/footer.ejs") %>

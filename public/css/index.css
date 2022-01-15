@@ -23,7 +23,14 @@ body{
 #contact{
   grid-column: 7/8;
 }
-
+#addnewblog{
+  grid-column: 8/9;
+}
+/* in between */
+.topdata,.myblogs{
+  width:70%;
+  margin:auto;
+}
 /*------------footer----*/
 .footer{
   background-color: skyblue;
@@ -33,4 +40,9 @@ body{
   position:absolute;
   width:100%;
   bottom:0;
+}
+.rdmore{
+  cursor: pointer;
+  color:blue;
+  text-decoration: underline;
 }
